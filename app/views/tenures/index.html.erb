@@ -1,0 +1,21 @@
+<h1>Listing tenures</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tenures.each do |tenure| %>
+  <tr>
+    <td><%= link_to 'Show', tenure %></td>
+    <td><%= link_to 'Edit', edit_tenure_path(tenure) %></td>
+    <td><%= link_to 'Destroy', tenure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tenure', new_tenure_path %>
