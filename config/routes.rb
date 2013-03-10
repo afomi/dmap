@@ -1,4 +1,7 @@
 Dmap::Application.routes.draw do
+  resources :agencies
+
+
   resources :jurisdictions
 
 
