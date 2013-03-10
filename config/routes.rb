@@ -1,4 +1,7 @@
 Dmap::Application.routes.draw do
+  resources :jurisdictions
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

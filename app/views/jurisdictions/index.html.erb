@@ -1,0 +1,21 @@
+<h1>Listing jurisdictions</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jurisdictions.each do |jurisdiction| %>
+  <tr>
+    <td><%= link_to 'Show', jurisdiction %></td>
+    <td><%= link_to 'Edit', edit_jurisdiction_path(jurisdiction) %></td>
+    <td><%= link_to 'Destroy', jurisdiction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Jurisdiction', new_jurisdiction_path %>
