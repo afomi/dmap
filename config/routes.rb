@@ -10,4 +10,5 @@ Dmap::Application.routes.draw do
   resources :agencies
   resources :jurisdictions
 
+  root :to => "home#index"
 end
