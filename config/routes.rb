@@ -1,4 +1,7 @@
 Dmap::Application.routes.draw do
+  resources :positions
+
+
   resources :bodies
 
 
