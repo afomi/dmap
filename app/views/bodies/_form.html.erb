@@ -1,0 +1,17 @@
+<%= form_for(@body) do |f| %>
+  <% if @body.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@body.errors.count, "error") %> prohibited this body from being saved:</h2>
+
+      <ul>
+      <% @body.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
